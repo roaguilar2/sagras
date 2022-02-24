@@ -42,8 +42,8 @@
                                         <div class="row">
                                             <div class="col s12 m6 l4">
                                                 <div class="input-field">
-                                                    <input value="<?php echo $ntrabajador -> cDeskName; ?>" type="text" disabled="">
-                                                    <label for="cDeskName">N&uacute;mero</label>
+                                                    <input value="<?php echo $ntrabajador -> ntrabajadorName; ?>" type="text" disabled="">
+                                                    <label for="ntrabajadorName">N&uacute;mero</label>
                                                     <span class="helper-text" data-error="El campo es requerido" data-success=""></span>
                                                 </div>
                                             </div>
