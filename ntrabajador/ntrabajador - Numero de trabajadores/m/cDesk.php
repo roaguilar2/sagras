@@ -61,4 +61,3 @@ class Ntrabajador {
 }
 
 $ntrabajador = new Ntrabajador();
-s
