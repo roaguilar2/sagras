@@ -62,20 +62,20 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <?php while ($ntrabajador = $_cDesk -> fetch_object()) { ?>
+                                            <?php while ($ntrabajador = $_ntrabajador -> fetch_object()) { ?>
                                             <tr>
                                                 <td>
-                                                    <?php echo $ntrabajador -> cDeskName; ?>
+                                                    <?php echo $ntrabajador -> ntrabajadorName; ?>
                                                 </td>
                                                 <td>
                                                     <a href="
                                                         <?php
                                                         if ($_SESSION["userAdmin"] == 4) {
                                                             $allow = 1;
-                                                            echo $link = $allow == 1 ? "../c/{$module}.php?m=update&id={$ntrabajador -> cDeskId}" : "javascript: void(0)";
+                                                            echo $link = $allow == 1 ? "../c/{$module}.php?m=update&id={$ntrabajador -> ntrabajadorId}" : "javascript: void(0)";
                                                         }
                                                         else {
-                                                            echo $link = $allow -> jUpdate == 1 ? "../c/{$module}.php?m=update&id={$ntrabajador -> cDeskId}" : "javascript: void(0)";
+                                                            echo $link = $allow -> jUpdate == 1 ? "../c/{$module}.php?m=update&id={$ntrabajador -> ntrabajadorId}" : "javascript: void(0)";
                                                         }
                                                         ?>" class="tooltipped m-l-10" data-position="left" data-tooltip="Modificar"><i class="material-icons 
                                                         <?php
@@ -91,10 +91,10 @@
                                                         <?php
                                                         if ($_SESSION["userAdmin"] == 4) {
                                                             $allow = 1;
-                                                            echo $link = $allow == 1 ? "../c/{$module}.php?m=delete&id={$ntrabajador -> cDeskId}" : "javascript: void(0)";
+                                                            echo $link = $allow == 1 ? "../c/{$module}.php?m=delete&id={$ntrabajador -> ntrabajadorId}" : "javascript: void(0)";
                                                         }
                                                         else {
-                                                            echo $link = $allow -> jDelete == 1 ? "../c/{$module}.php?m=delete&id={$ntrabajador -> cDeskId}" : "javascript: void(0)";
+                                                            echo $link = $allow -> jDelete == 1 ? "../c/{$module}.php?m=delete&id={$ntrabajador -> ntrabajadorId}" : "javascript: void(0)";
                                                         }
                                                         ?>" class="tooltipped m-l-10" data-position="top" data-tooltip="Eliminar"><i class="material-icons 
                                                         <?php
