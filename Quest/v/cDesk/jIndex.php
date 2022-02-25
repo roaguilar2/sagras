@@ -57,7 +57,7 @@
                                     <table id='example' class='display nowrap' style='width:100%'>
                                         <thead>
                                             <tr>
-                                                <td class="td-block">Pais</td>
+                                                <td class="td-block">Tarea</td>
                                                 <td>Acci&oacute;n</td>
                                             </tr>
                                         </thead>
