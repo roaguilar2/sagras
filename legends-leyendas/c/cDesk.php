@@ -5,7 +5,7 @@ session_start();
 // module
 
 $module = "legends";
-$moduleId = 98;
+$moduleId = 102;
 
 // connection
 
