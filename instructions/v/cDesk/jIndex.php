@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col s12 m-b-5">
             <a href="../c/main.php?m=menu" class="breadcrumb hide-on-small-only">Men&uacute; Principal</a>
-            <a href="#!" class="breadcrumb hide-on-med-and-down">Cuestionario</a>
+            <a href="#!" class="breadcrumb hide-on-med-and-down">Instrucciones</a>
             <a href="#!" class="breadcrumb ">Lista</a>
             <a href="#help" class="tooltipped right modal-trigger m-r-5" data-position="left" data-tooltip="Manual de Usuario">
                 <i class="material-icons blue-text">help</i>
@@ -25,7 +25,7 @@
                 <div class="card-content">
                     <div class="row">
                         <div class="col s12">
-                            <span class="blue-text p-l-10">Cuestionario</span>
+                            <span class="blue-text p-l-10">Instrucciones</span>
                             <a href="../c/main.php?m=menu" class="tooltipped right m-l-5" data-position="left" data-tooltip="Cerrar"><i class="material-icons blue-grey-text">cancel</i></a>
                             <a href="
                                 <?php
@@ -57,25 +57,25 @@
                                     <table id='example' class='display nowrap' style='width:100%'>
                                         <thead>
                                             <tr>
-                                                <td class="td-block">Item</td>
+                                                <td class="td-block">Categoria</td>
                                                 <td>Acci&oacute;n</td>
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <?php while ($item = $_item -> fetch_object()) { ?>
+                                            <?php while ($instructions = $_instructions -> fetch_object()) { ?>
                                             <tr>
                                                 <td>
-                                                    <?php echo $item -> itemName; ?>
+                                                    <?php echo $instructions -> instructionsName; ?>
                                                 </td>
                                                 <td>
                                                     <a href="
                                                         <?php
                                                         if ($_SESSION["userAdmin"] == 4) {
                                                             $allow = 1;
-                                                            echo $link = $allow == 1 ? "../c/{$module}.php?m=update&id={$item -> itemId}" : "javascript: void(0)";
+                                                            echo $link = $allow == 1 ? "../c/{$module}.php?m=update&id={$instructions -> instructionsId}" : "javascript: void(0)";
                                                         }
                                                         else {
-                                                            echo $link = $allow -> jUpdate == 1 ? "../c/{$module}.php?m=update&id={$item -> itemId}" : "javascript: void(0)";
+                                                            echo $link = $allow -> jUpdate == 1 ? "../c/{$module}.php?m=update&id={$instructions -> instructionsId}" : "javascript: void(0)";
                                                         }
                                                         ?>" class="tooltipped m-l-10" data-position="left" data-tooltip="Modificar"><i class="material-icons 
                                                         <?php
@@ -91,10 +91,10 @@
                                                         <?php
                                                         if ($_SESSION["userAdmin"] == 4) {
                                                             $allow = 1;
-                                                            echo $link = $allow == 1 ? "../c/{$module}.php?m=delete&id={$item -> itemId}" : "javascript: void(0)";
+                                                            echo $link = $allow == 1 ? "../c/{$module}.php?m=delete&id={$instructions -> instructionsId}" : "javascript: void(0)";
                                                         }
                                                         else {
-                                                            echo $link = $allow -> jDelete == 1 ? "../c/{$module}.php?m=delete&id={$item -> itemId}" : "javascript: void(0)";
+                                                            echo $link = $allow -> jDelete == 1 ? "../c/{$module}.php?m=delete&id={$instructions -> instructionsId}" : "javascript: void(0)";
                                                         }
                                                         ?>" class="tooltipped m-l-10" data-position="top" data-tooltip="Eliminar"><i class="material-icons 
                                                         <?php
