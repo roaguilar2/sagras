@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 03-03-2022 a las 18:56:10
+-- Tiempo de generación: 03-03-2022 a las 19:52:40
 -- Versión del servidor: 10.4.22-MariaDB
 -- Versión de PHP: 8.1.2
 
@@ -31,7 +31,8 @@ CREATE TABLE `cticket` (
   `cticketId` int(11) NOT NULL,
   `cticketName` varchar(100) DEFAULT NULL,
   `cticketStatus` int(11) NOT NULL DEFAULT 1,
-  `cticketTime` varchar(100) DEFAULT NULL
+  `cticketTime` varchar(100) DEFAULT NULL,
+  `ticketId` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -42,7 +43,8 @@ CREATE TABLE `cticket` (
 -- Indices de la tabla `cticket`
 --
 ALTER TABLE `cticket`
-  ADD PRIMARY KEY (`cticketId`);
+  ADD PRIMARY KEY (`cticketId`),
+  ADD KEY `cticketTime` (`cticketTime`);
 
 --
 -- AUTO_INCREMENT de las tablas volcadas
