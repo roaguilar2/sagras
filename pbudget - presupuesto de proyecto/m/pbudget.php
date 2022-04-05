@@ -1,13 +1,13 @@
 <?php
 
-class Rubro {
+class Pbudget {
 
     public static function jIndex($moduleId) {
         
         /*
          * Verificará si el archivo ya ha sido incluido y si es así, no se incluye (require) de nuevo.
          */
-        require_once '../f/rubro/jIndex.php';
+        require_once '../f/pbudget/jIndex.php';
     }
 
     public static function jCreate($moduleId) {
@@ -15,7 +15,7 @@ class Rubro {
         /*
          * Verificará si el archivo ya ha sido incluido y si es así, no se incluye (require) de nuevo.
          */
-        require_once '../f/rubro/jCreate.php';
+        require_once '../f/pbudget/jCreate.php';
     }
 
     public static function jCreateDb($moduleId) {
@@ -23,7 +23,7 @@ class Rubro {
         /*
          * Verificará si el archivo ya ha sido incluido y si es así, no se incluye (require) de nuevo.
          */
-        require_once '../f/rubro/jCreateDb.php';
+        require_once '../f/pbudget/jCreateDb.php';
     }
 
     public static function jUpdate($moduleId) {
@@ -31,7 +31,7 @@ class Rubro {
         /*
          * Verificará si el archivo ya ha sido incluido y si es así, no se incluye (require) de nuevo.
          */
-        require_once '../f/rubro/jUpdate.php';
+        require_once '../f/pbudget/jUpdate.php';
     }
 
     public static function jUpdateDb($moduleId) {
@@ -39,7 +39,7 @@ class Rubro {
         /*
          * Verificará si el archivo ya ha sido incluido y si es así, no se incluye (require) de nuevo.
          */
-        require_once '../f/rubro/jUpdateDb.php';
+        require_once '../f/pbudget/jUpdateDb.php';
     }
 
     public static function jDelete($moduleId) {
@@ -47,7 +47,7 @@ class Rubro {
         /*
          * Verificará si el archivo ya ha sido incluido y si es así, no se incluye (require) de nuevo.
          */
-        require_once '../f/rubro/jDelete.php';
+        require_once '../f/pbudget/jDelete.php';
     }
 
     public static function jDeleteDb($moduleId) {
@@ -55,9 +55,9 @@ class Rubro {
         /*
          * Verificará si el archivo ya ha sido incluido y si es así, no se incluye (require) de nuevo.
          */
-        require_once '../f/rubro/jDeleteDb.php';
+        require_once '../f/pbudget/jDeleteDb.php';
     }
 
 }
 
-$rubro = new Rubro();
+$pbudget = new Pbudget();
