@@ -38,12 +38,12 @@
                                 <div class="row">
                                     <div class="col s12">
                                         <div class="m-t-20 m-b-20 m-l-20 m-r-20">
-                                            <form id="form_validation" action="../c/Pbudget.php?m=createDb" method="post">
+                                            <form id="form_validation" action="../c/pbudget.php?m=createDb" method="post">
                                                 <div class="row">
                                                     <div class="col s12 m6 l4">
                                                         <div class="input-field">
-                                                            <input id="PbudgetName" name="PbudgetName" placeholder="" type="text" class="validate">
-                                                            <label for="PbudgetName">Pa&iacute;s</label>
+                                                            <input id="pbudgetName" name="pbudgetName" placeholder="" type="text" class="validate">
+                                                            <label for="pbudgetName">Pa&iacute;s</label>
                                                             <span class="helper-text" data-error="El campo es requerido" data-success=""></span>
                                                         </div>
                                                     </div>
