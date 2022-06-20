@@ -5,7 +5,7 @@ session_start();
 // module
 
 $module = "stareas";
-$moduleId = 120;
+$moduleId = 115;
 
 // connection
 
