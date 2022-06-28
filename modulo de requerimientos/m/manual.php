@@ -1,13 +1,13 @@
 <?php
 
-class Manual {
+class Mrequerimiento {
 
     public static function jIndex($moduleId) {
         
         /*
          * Verificará si el archivo ya ha sido incluido y si es así, no se incluye (require) de nuevo.
          */
-        require_once '../f/manual/jIndex.php';
+        require_once '../f/mrequerimiento/jIndex.php';
     }
 
     public static function jCreate($moduleId) {
@@ -15,7 +15,7 @@ class Manual {
         /*
          * Verificará si el archivo ya ha sido incluido y si es así, no se incluye (require) de nuevo.
          */
-        require_once '../f/manual/jCreate.php';
+        require_once '../f/mrequerimiento/jCreate.php';
     }
     
     public static function jCreate2($moduleId) {
@@ -23,14 +23,14 @@ class Manual {
         /*
          * Verificará si el archivo ya ha sido incluido y si es así, no se incluye (require) de nuevo.
          */
-        require_once '../f/manual/jCreate2.php';
+        require_once '../f/mrequerimiento/jCreate2.php';
     }
         public static function jCreate3($moduleId) {
         
         /*
          * Verificará si el archivo ya ha sido incluido y si es así, no se incluye (require) de nuevo.
          */
-        require_once '../f/manual/jCreate3.php';
+        require_once '../f/mrequerimiento/jCreate3.php';
     }
 
     public static function jCreateDb($moduleId) {
@@ -38,7 +38,7 @@ class Manual {
         /*
          * Verificará si el archivo ya ha sido incluido y si es así, no se incluye (require) de nuevo.
          */
-        require_once '../f/manual/jCreateDb.php';
+        require_once '../f/mrequerimiento/jCreateDb.php';
     }
 
     public static function jUpdate($moduleId) {
@@ -46,7 +46,7 @@ class Manual {
         /*
          * Verificará si el archivo ya ha sido incluido y si es así, no se incluye (require) de nuevo.
          */
-        require_once '../f/manual/jUpdate.php';
+        require_once '../f/mrequerimiento/jUpdate.php';
     }
 
     public static function jUpdate2($moduleId) {
@@ -54,7 +54,7 @@ class Manual {
         /*
          * Verificará si el archivo ya ha sido incluido y si es así, no se incluye (require) de nuevo.
          */
-        require_once '../f/manual/jUpdate2.php';
+        require_once '../f/mrequerimiento/jUpdate2.php';
     }
 
     public static function jUpdateDb($moduleId) {
@@ -62,7 +62,7 @@ class Manual {
         /*
          * Verificará si el archivo ya ha sido incluido y si es así, no se incluye (require) de nuevo.
          */
-        require_once '../f/manual/jUpdateDb.php';
+        require_once '../f/mrequerimiento/jUpdateDb.php';
     }
     
     public static function jUpdateDb2($moduleId) {
@@ -70,7 +70,7 @@ class Manual {
         /*
          * Verificará si el archivo ya ha sido incluido y si es así, no se incluye (require) de nuevo.
          */
-        require_once '../f/manual/jUpdateDb2.php';
+        require_once '../f/mrequerimiento/jUpdateDb2.php';
     }
 
     public static function jDelete($moduleId) {
@@ -78,7 +78,7 @@ class Manual {
         /*
          * Verificará si el archivo ya ha sido incluido y si es así, no se incluye (require) de nuevo.
          */
-        require_once '../f/manual/jDelete.php';
+        require_once '../f/mrequerimiento/jDelete.php';
     }
 
     public static function jDeleteDb($moduleId) {
@@ -86,16 +86,16 @@ class Manual {
         /*
          * Verificará si el archivo ya ha sido incluido y si es así, no se incluye (require) de nuevo.
          */
-        require_once '../f/manual/jDeleteDb.php';
+        require_once '../f/mrequerimiento/jDeleteDb.php';
     }
 public static function jRead($moduleId) {
         
         /*
          * Verificará si el archivo ya ha sido incluido y si es así, no se incluye (require) de nuevo.
          */
-        require_once '../f/manual/jRead.php';
+        require_once '../f/mrequerimiento/jRead.php';
     }
 
 }
 
-$manual = new Manual();
+$mrequerimiento = new Mrequerimiento();

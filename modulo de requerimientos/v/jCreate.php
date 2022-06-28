@@ -5,9 +5,9 @@
             <div class="row">
                 <div class="col s12 m-b-5">
                     <a href="../c/main.php?m=menu" class="breadcrumb hide-on-small-only">Men&uacute; Principal</a>
-                    <a href="#!" class="breadcrumb hide-on-med-and-down">Manual</a>
+                    <a href="#!" class="breadcrumb hide-on-med-and-down">mrequerimiento</a>
                     <a href="#!" class="breadcrumb ">A&ntilde;adir</a>
-                    <a href="#help" class="tooltipped right modal-trigger m-r-5" data-position="left" data-tooltip="Manual de Usuario">
+                    <a href="#help" class="tooltipped right modal-trigger m-r-5" data-position="left" data-tooltip="mrequerimiento de Usuario">
                         <i class="material-icons blue-text">help</i>
                     </a>
                     <a href="#ticket" class="tooltipped right modal-trigger m-r-5" data-position="left" data-tooltip="Solicitar Ayuda">
@@ -19,15 +19,15 @@
                 </div>
             </div>
 
-            <form id="form_validation" action="../c/manual.php?m=createDb" method="post" enctype="multipart/form-data"  onsubmit="return checkForm(this);" >
+            <form id="form_validation" action="../c/mrequerimiento.php?m=createDb" method="post" enctype="multipart/form-data"  onsubmit="return checkForm(this);" >
                 <div class="row">
                     <div class="col s12 m12 l12 m-t-5">
                         <div class="card blue-grey lighten-5 hoverable">
                             <div class="card-content">
                                 <div class="row">
                                     <div class="col s12">
-                                        <span class="blue-text p-l-10">Manual</span>
-                                        <a href="../c/manual.php?m=index" class="tooltipped right m-l-5" data-position="left" data-tooltip="Cerrar">
+                                        <span class="blue-text p-l-10">mrequerimiento</span>
+                                        <a href="../c/mrequerimiento.php?m=index" class="tooltipped right m-l-5" data-position="left" data-tooltip="Cerrar">
                                             <i class="material-icons blue-grey-text">cancel</i>
                                         </a>
                                     </div>
@@ -41,8 +41,8 @@
                                                         
                                                         <div class="col s12 m6 l4">
                                                             <div class="input-field">
-                                                                <input id="manualName" name="manualName" placeholder="" type="text" class="validate" required>
-                                                                <label for="manualName">Nombre del Manual</label>
+                                                                <input id="mrequerimientoName" name="mrequerimientoName" placeholder="" type="text" class="validate" required>
+                                                                <label for="mrequerimientoName">Nombre del mrequerimiento</label>
                                                                 <span class="helper-text" data-error="El campo es requerido" data-success=""></span>
                                                             </div>
                                                         </div>
@@ -50,17 +50,17 @@
                                                         
                                                         <div class="col s12 m6 l12 ">
                                                              <div class="input-field">
-                                                                 <textarea id="ckeditor" name="manualText" class="ckeditor m-t-20" required>
+                                                                 <textarea id="ckeditor" name="mrequerimientoText" class="ckeditor m-t-20" required>
                                                                  </textarea>
-                                                                 <label  for="textarea1">Mensaje de Bienvenida del Manual</label>
+                                                                 <label  for="textarea1">Mensaje de Bienvenida del mrequerimiento</label>
                                                             </div>
                                                         </div>
                                                         
                                                         <div class="col s12 m6 l12 ">
                                                              <div class="input-field">
-                                                                 <textarea id="ckeditor" name="manualText2" class="ckeditor m-t-20" required>
+                                                                 <textarea id="ckeditor" name="mrequerimientoText2" class="ckeditor m-t-20" required>
                                                                  </textarea>
-                                                                 <label  for="textarea1">Mensaje Resultado del Manual</label>
+                                                                 <label  for="textarea1">Mensaje Resultado del mrequerimiento</label>
                                                             </div>
                                                         </div>
                                                         
@@ -68,7 +68,7 @@
   
                                              
                                                             <div class="col s12 m-t-10">
-                                                                <label>Imagen del Manual</label>
+                                                                <label>Imagen del mrequerimiento</label>
                                                                 <div class="file-field input-field">
                                                                     <div class="btn white ">
                                                                         <i class="material-icons blue-text">attach_file</i>
@@ -101,7 +101,7 @@
                                       
                                         <div class="row">
                                             <div class="col s12 m-t-20">
-                                                <a href="../c/manual.php?m=index" class="btn red waves-light tooltipped" data-position="top" data-tooltip="Cancelar">
+                                                <a href="../c/mrequerimiento.php?m=index" class="btn red waves-light tooltipped" data-position="top" data-tooltip="Cancelar">
                                                     <i class="material-icons">cancel</i>
                                                 </a>
                                                 <button type="submit" class="btn blue waves-effect tooltipped" data-position="top" data-tooltip="Guardar">
@@ -129,7 +129,7 @@
 
     <div id="help" class="modal">
         <div class="modal-content">
-            <p class="">Manual de Usuario</p>
+            <p class="">mrequerimiento de Usuario</p>
             <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo

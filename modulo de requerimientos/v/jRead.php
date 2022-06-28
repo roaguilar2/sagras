@@ -4,9 +4,9 @@
     <div class="row">
         <div class="col s12 m-b-5">
             <a href="../c/main.php?m=menu" class="breadcrumb hide-on-small-only">Men&uacute; Principal</a>
-            <a href="#!" class="breadcrumb hide-on-med-and-down">Manual</a>
+            <a href="#!" class="breadcrumb hide-on-med-and-down">mrequerimiento</a>
             <a href="#!" class="breadcrumb hide-on-med-and-down">Consultar</a>
-            <a href="#help" class="tooltipped right modal-trigger m-r-5" data-position="left" data-tooltip="Manual de Usuario">
+            <a href="#help" class="tooltipped right modal-trigger m-r-5" data-position="left" data-tooltip="mrequerimiento de Usuario">
                 <i class="material-icons blue-text">help</i>
             </a>
             <a href="#ticket" class="tooltipped right modal-trigger m-r-5" data-position="left" data-tooltip="Solicitar Ayuda">
@@ -56,21 +56,21 @@
                                     
                                     <div class="row">
                                         <div class="col s6 m4">
-                                            <span class="blue-grey-text text-darken-2">Manual:</span>
+                                            <span class="blue-grey-text text-darken-2">mrequerimiento:</span>
                                         </div>
 
                                         <div class="col s6 m4">
-                                            <span><?php echo $manualName ; ?></span>
+                                            <span><?php echo $mrequerimientoName ; ?></span>
                                         </div>
                                         </div>
                                         <div class="m-t-20"></div>
                                         <div class="row">
                                         <div class="col s6 m2">
-                                            <span class="blue-grey-text text-darken-2">Texto Manual:</span>
+                                            <span class="blue-grey-text text-darken-2">Texto mrequerimiento:</span>
                                         </div>
 
                                         <div class="col s6 m12 m-t-10">
-                                            <span><?php echo $client -> manualText; ?></span>
+                                            <span><?php echo $client -> mrequerimientoText; ?></span>
                                         </div>
                                         
                                       
@@ -79,11 +79,11 @@
                                     <div class="m-t-20"></div>
                                         <div class="row">
                                         <div class="col s6 m2">
-                                            <span class="blue-grey-text text-darken-2">Texto Manual2:</span>
+                                            <span class="blue-grey-text text-darken-2">Texto mrequerimiento2:</span>
                                         </div>
 
                                         <div class="col s6 m12 m-t-10">
-                                            <span><?php echo $client -> manualText2; ?></span>
+                                            <span><?php echo $client -> mrequerimientoText2; ?></span>
                                         </div>
                                         
                                       
@@ -114,7 +114,7 @@
 
 <div id="help" class="modal">
 <div class="modal-content">
-    <p class="">Manual de Usuario</p>
+    <p class="">mrequerimiento de Usuario</p>
     <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo

@@ -5,9 +5,9 @@
     <div class="row">
         <div class="col s12 m-b-5">
             <a href="../c/main.php?m=menu" class="breadcrumb hide-on-small-only">Men&uacute; Principal</a>
-            <a href="#!" class="breadcrumb hide-on-med-and-down">Manual</a>
+            <a href="#!" class="breadcrumb hide-on-med-and-down">mrequerimiento</a>
             <a href="#!" class="breadcrumb ">Editar</a>
-            <a href="#help" class="tooltipped right modal-trigger m-r-5" data-position="left" data-tooltip="Manual de Usuario">
+            <a href="#help" class="tooltipped right modal-trigger m-r-5" data-position="left" data-tooltip="mrequerimiento de Usuario">
                 <i class="material-icons blue-text">help</i>
             </a>
             <a href="#ticket" class="tooltipped right modal-trigger m-r-5" data-position="left" data-tooltip="Solicitar Ayuda">
@@ -25,14 +25,14 @@
                     <div class="row">
                         <div class="col s12">
                             <span class="breadcrumb p-l-10">Editar</span>
-                            <a href="#!" class="breadcrumb">Manual</a>
-                            <a href="#!" class="breadcrumb"><?php echo $manualName;; ?></a>
-                            <a href="../c/manual.php?m=index" class="tooltipped right m-l-5" data-position="left" data-tooltip="Cerrar">
+                            <a href="#!" class="breadcrumb">mrequerimiento</a>
+                            <a href="#!" class="breadcrumb"><?php echo $mrequerimientoName;; ?></a>
+                            <a href="../c/mrequerimiento.php?m=index" class="tooltipped right m-l-5" data-position="left" data-tooltip="Cerrar">
                                 <i class="material-icons blue-grey-text">cancel</i>
                             </a>
                         </div>
                     </div>
-                    <form id="form_validation" action="../c/manual.php?m=updateDb&cid=<?php echo $_GET["cid"]; ?>"  method="post"
+                    <form id="form_validation" action="../c/mrequerimiento.php?m=updateDb&cid=<?php echo $_GET["cid"]; ?>"  method="post"
                     enctype="multipart/form-data" onsubmit="return checkForm(this);">
                         <div class="card m-t-10 m-l-5 m-r-5">
                             <div class="row">
@@ -44,24 +44,24 @@
 
                                         <div class="col s12 m12 l12 ">
                                                  <div class="input-field">
-                                                    <input id="d" name="d" value="<?php echo $manualName; ?>" type="text">
-                                                    <label class="active" for="d">Manual</label>
+                                                    <input id="d" name="d" value="<?php echo $mrequerimientoName; ?>" type="text">
+                                                    <label class="active" for="d">mrequerimiento</label>
                                                  </div>
                                          </div>
                                           <div class="col s12 m6 l6 ">
                                                  <div class="input-field">
-                                                      <textarea id="ckeditor" name="manualText" class="ckeditor m-t-20">
-                                                    <?php echo $client -> manualText; ?>
+                                                      <textarea id="ckeditor" name="mrequerimientoText" class="ckeditor m-t-20">
+                                                    <?php echo $client -> mrequerimientoText; ?>
                                                      </textarea>
-                                                     <label  for="textarea1">Mensaje de Bienvenida del Manual</label>
+                                                     <label  for="textarea1">Mensaje de Bienvenida del mrequerimiento</label>
                                                  </div>
                                          </div>
                                          <div class="col s12 m6 l6 ">
                                                  <div class="input-field">
-                                                      <textarea id="ckeditor" name="manualText2" class="ckeditor m-t-20">
-                                                    <?php echo $client -> manualText2; ?>
+                                                      <textarea id="ckeditor" name="mrequerimientoText2" class="ckeditor m-t-20">
+                                                    <?php echo $client -> mrequerimientoText2; ?>
                                                      </textarea>
-                                                     <label  for="textarea1">Mensaje Resultado del Manual</label>
+                                                     <label  for="textarea1">Mensaje Resultado del mrequerimiento</label>
                                                  </div>
                                          </div>
                                          <!--imagen -->
@@ -76,7 +76,7 @@
                       <div class="col s12 l4">
                    <?php
                             $id =  $_GET["cid"];
-                             $path2 = "../manual/" . $id;
+                             $path2 = "../mrequerimiento/" . $id;
                             if (file_exists($path2)) {
                                 $directorio2 = opendir($path2);
                                 while ($archivo2 = readdir($directorio2)) {
@@ -98,7 +98,7 @@
          <a href="#!" class="tooltipped left m-r-10" data-position="right" data-tooltip="Ver el Documento Adjunto"><i class="material-icons blue-text">info</i></a>
                                                                 </div>
                                                                  <div class="col s12 l2">
-           <a class="red-text" href="../v/manual/deletei.php?c=<?php echo $_GET["cid"];?>&a=<?php echo $archivo2;?>" >Eliminar Documento</a>
+           <a class="red-text" href="../v/mrequerimiento/deletei.php?c=<?php echo $_GET["cid"];?>&a=<?php echo $archivo2;?>" >Eliminar Documento</a>
               <a href="#!" class="tooltipped left m-r-10" data-position="right" data-tooltip="Eliminar el Documento Adjunto"><i class="material-icons red-text">delete</i></a>
            </div>   
 
@@ -160,7 +160,7 @@
                                    
                                         <div class="row">
                                             <div class="col s12 m-t-10 ">
-                                                <a href="../c/manual.php?m=index" class="btn red waves-light tooltipped" data-position="top" data-tooltip="Cancelar">
+                                                <a href="../c/mrequerimiento.php?m=index" class="btn red waves-light tooltipped" data-position="top" data-tooltip="Cancelar">
                                                     <i class="material-icons">cancel</i>
                                                 </a>
                                              <button type="submit" class="btn blue waves-effect tooltipped" data-position="top" data-tooltip="Guardar">
@@ -189,7 +189,7 @@
 
 <div id="help" class="modal">
 <div class="modal-content">
-    <p class="">Manual de Usuario</p>
+    <p class="">mrequerimiento de Usuario</p>
     <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo

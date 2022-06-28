@@ -2,7 +2,7 @@
 
 // module
 
-$module = 'manual';
+$module = 'mrequerimiento';
 $moduleId =  122;
 
 // connection
@@ -13,12 +13,12 @@ include '../allow.php';
 // select
 
 $_cp = mysqli_query($master, "
-    SELECT * FROM manual
-    WHERE manualStatus = 1
+    SELECT * FROM mrequerimiento
+    WHERE mrequerimientoStatus = 1
 ");
 $_cp2 = mysqli_query($master, "
-    SELECT * FROM manual
-    WHERE manualStatus = 1
+    SELECT * FROM mrequerimiento
+    WHERE mrequerimientoStatus = 1
 ");
 
 // view
@@ -31,35 +31,35 @@ switch ($n) {
 
     case 'added':
         echo $added;
-        require_once '../v/manual/jIndex.php';
+        require_once '../v/mrequerimiento/jIndex.php';
         break;
 
     case 'updated':
         echo $updated;
-        require_once '../v/manual/jIndex.php';
+        require_once '../v/mrequerimiento/jIndex.php';
         break;
 
     case 'deleted':
         echo $deleted;
-        require_once '../v/manual/jIndex.php';
+        require_once '../v/mrequerimiento/jIndex.php';
         break;
 
     case 'duplicated':
         echo $duplicated;
-        require_once '../v/manual/jIndex.php';
+        require_once '../v/mrequerimiento/jIndex.php';
         break;
     
     case 'porcentaje':
         echo $porcentaje;
-        require_once '../v/manual/jIndex.php';
+        require_once '../v/mrequerimiento/jIndex.php';
         break;
     
     case 'notAllowed':
         echo $notAllowed;
-        require_once '../v/manual/jIndex.php';
+        require_once '../v/mrequerimiento/jIndex.php';
         break;
 
     default:
-        require_once '../v/manual/jIndex.php';
+        require_once '../v/mrequerimiento/jIndex.php';
         break;
 }

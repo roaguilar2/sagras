@@ -6,38 +6,38 @@ include '../connection.php';
 
 // module
 
-$module = 'manual';
+$module = 'mrequerimiento';
 $action = 'add';
 
 // var
-$manualName = filter_var($_POST['manualName'], FILTER_SANITIZE_STRING);
-$manualText = filter_var($_POST['manualText'], FILTER_SANITIZE_STRING);
-$manualText2 = filter_var($_POST['manualText2'], FILTER_SANITIZE_STRING);
+$mrequerimientoName = filter_var($_POST['mrequerimientoName'], FILTER_SANITIZE_STRING);
+$mrequerimientoText = filter_var($_POST['mrequerimientoText'], FILTER_SANITIZE_STRING);
+$mrequerimientoText2 = filter_var($_POST['mrequerimientoText2'], FILTER_SANITIZE_STRING);
 
 // verify
 
-$_manual = mysqli_query($master, "
-    SELECT * FROM manual
-    WHERE manualName = '" . $manualName . "'
-    AND manualStatus = 1
+$_mrequerimiento = mysqli_query($master, "
+    SELECT * FROM mrequerimiento
+    WHERE mrequerimientoName = '" . $mrequerimientoName . "'
+    AND mrequerimientoStatus = 1
 ");
 
-$manual = $_manual -> fetch_object();
+$mrequerimiento = $_mrequerimiento -> fetch_object();
 
-$manualDb = $manual -> manualName;
+$mrequerimientoDb = $mrequerimiento -> mrequerimientoName;
 
-if (strcasecmp($manualName, $manualDb) !== 0) {
+if (strcasecmp($mrequerimientoName, $mrequerimientoDb) !== 0) {
 
     $insert = $master -> prepare ("
-        INSERT INTO manual
-        (manualName, manualText, manualText2)
+        INSERT INTO mrequerimiento
+        (mrequerimientoName, mrequerimientoText, mrequerimientoText2)
         VALUES
         (?,?,?)
     ");
 
     $insert -> bind_param (
         "sss",
-        $manualName, $manualText, $manualText2
+        $mrequerimientoName, $mrequerimientoText, $mrequerimientoText2
     );
 
 
@@ -67,7 +67,7 @@ if (strcasecmp($manualName, $manualDb) !== 0) {
 
             if (1 == 1) {
 
-                $ruta2 = '../manual/' . $id . '/';
+                $ruta2 = '../mrequerimiento/' . $id . '/';
                 $archivo2 = $ruta2 . $_FILES["archivo2"]["name"];
                 if (!file_exists($ruta2)) {
                     mkdir($ruta2);
@@ -90,7 +90,7 @@ if (strcasecmp($manualName, $manualDb) !== 0) {
             $filename2 = $_FILES["archivo2"]["name"][$key]; //Obtenemos el nombre original del archivo
             $source2 = $_FILES["archivo2"]["tmp_name"][$key]; //Obtenemos un nombre temporal del archivo
 
-            $directorio2 = '../manual/' . $id . '/'; //Declaramos un  variable con la ruta donde guardaremos los archivos
+            $directorio2 = '../mrequerimiento/' . $id . '/'; //Declaramos un  variable con la ruta donde guardaremos los archivos
             //Validamos si la ruta de destino existe, en caso de no existir la creamos
             if (!file_exists($directorio2)) {
                 mkdir($directorio2, 0777) or die("No se puede crear el directorio de extracci&oacute;n");

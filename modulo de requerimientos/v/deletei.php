@@ -17,10 +17,10 @@
 $id= $_GET["c"];
 $ar= $_GET["a"];
 
-$pathb = "../../manual/" . $id;
-unlink('../../manual/'.$id. '/' . $ar);
+$pathb = "../../mrequerimiento/" . $id;
+unlink('../../mrequerimiento/'.$id. '/' . $ar);
 rmdir($pathb);	
-$URL="../../c/manual.php?m=update2&cid=". $id;
+$URL="../../c/mrequerimiento.php?m=update2&cid=". $id;
 echo "<script type='text/javascript'>document.location.href='{$URL}';</script>";
 echo '<META HTTP-EQUIV="refresh" content="0;URL=' . $URL . '">';
 ?>	

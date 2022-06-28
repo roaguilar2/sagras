@@ -1,5 +1,5 @@
 <?php
-$module = 'manual';
+$module = 'mrequerimiento';
 $action = 'delete';
 
 // connection
@@ -13,11 +13,11 @@ $clientStatus = 0;
 // update
 
 $update = $master -> prepare ("
-    UPDATE manual
+    UPDATE mrequerimiento
     SET
-    manualStatus = ?
+    mrequerimientoStatus = ?
     WHERE
-    manualId = ?
+    mrequerimientoId = ?
 ");
 
 $update -> bind_param (
@@ -41,4 +41,4 @@ $trace -> execute();
 
 // view
 
-echo "<script> window.location='../c/manual.php?m=index&n=deleted'</script>";
+echo "<script> window.location='../c/mrequerimiento.php?m=index&n=deleted'</script>";

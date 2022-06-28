@@ -35,4 +35,4 @@ $economicArea = mysqli_query($master, "
 
 // view
 
-require_once '../v/manual/jCreate3.php';
+require_once '../v/mrequerimiento/jCreate3.php';

@@ -4,7 +4,7 @@ session_start();
 
 // module
 
-$module = "manual";
+$module = "mrequerimiento";
 $moduleId =122;
 
 // connection
@@ -15,7 +15,7 @@ include '../allow.php';
 // model
 
 require_once '../m/main.php';
-require_once '../m/manual.php';
+require_once '../m/mrequerimiento.php';
 
 // mode
 
@@ -30,60 +30,60 @@ $main -> jNavbar();
 
                 switch ($mode) {
                     case 'index':
-                        $manual -> jIndex($moduleId);
+                        $mrequerimiento -> jIndex($moduleId);
                         $main -> jFooter();
                     break;
 
                     case 'create':
-                        $manual -> jCreate($moduleId);
+                        $mrequerimiento -> jCreate($moduleId);
                         $main -> jFooter();
                     break;
                     
                     case 'create2':
-                        $manual -> jCreate2($moduleId);
+                        $mrequerimiento -> jCreate2($moduleId);
                         $main -> jFooter();
                     break;
                     
                     case 'create3':
-                        $manual -> jCreate3($moduleId);
+                        $mrequerimiento -> jCreate3($moduleId);
                         $main -> jFooter();
                     break;
 
                     case 'createDb':
-                        $manual -> jCreateDb($moduleId);
+                        $mrequerimiento -> jCreateDb($moduleId);
                         $main -> jFooter();
                     break;
 
                     case 'update':
-                        $manual -> jUpdate($moduleId);
+                        $mrequerimiento -> jUpdate($moduleId);
                         $main -> jFooter();
                     break;
                     case 'update2':
-                        $manual -> jUpdate2($moduleId);
+                        $mrequerimiento -> jUpdate2($moduleId);
                         $main -> jFooter();
                     break;
 
                     case 'updateDb':
-                        $manual -> jUpdateDb($moduleId);
+                        $mrequerimiento -> jUpdateDb($moduleId);
                         $main -> jFooter();
                     break;
                     case 'updateDb2':
-                        $manual -> jUpdateDb2($moduleId);
+                        $mrequerimiento -> jUpdateDb2($moduleId);
                         $main -> jFooter();
                     break;
 
                     case 'delete':
-                        $manual -> jDelete($moduleId);
+                        $mrequerimiento -> jDelete($moduleId);
                         $main -> jFooter();
                     break;
 
                     case 'deleteDb':
-                        $manual -> jDeleteDb($moduleId);
+                        $mrequerimiento -> jDeleteDb($moduleId);
                         $main -> jFooter();
                     break;
                     
                     case 'read':
-                        $manual -> jRead($moduleId);
+                        $mrequerimiento -> jRead($moduleId);
                         $main -> jFooter();
                     break;
 

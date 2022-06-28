@@ -8,13 +8,13 @@ include '../allow.php';
 // select
 
 $_client = mysqli_query($master, "
-    SELECT * FROM manual
-    WHERE manualId = '" . $_GET["cid"] . "'
+    SELECT * FROM mrequerimiento
+    WHERE mrequerimientoId = '" . $_GET["cid"] . "'
 ");
 
 $client = $_client -> fetch_object();
-$manualName = $client -> manualName ;
+$mrequerimientoName = $client -> mrequerimientoName ;
 
 // view
 
-require_once '../v/manual/jUpdate.php';
+require_once '../v/mrequerimiento/jUpdate.php';

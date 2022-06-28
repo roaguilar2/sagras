@@ -5,9 +5,9 @@
     <div class="row">
         <div class="col s12 m-b-5">
             <a href="../c/main.php?m=menu" class="breadcrumb hide-on-small-only">Men&uacute; Principal</a>
-            <a href="#!" class="breadcrumb hide-on-med-and-down">Manual</a>
+            <a href="#!" class="breadcrumb hide-on-med-and-down">mrequerimiento</a>
             <a href="#!" class="breadcrumb ">Lista</a>
-            <a href="#help" class="tooltipped right modal-trigger m-r-5" data-position="left" data-tooltip="Manual de Usuario">
+            <a href="#help" class="tooltipped right modal-trigger m-r-5" data-position="left" data-tooltip="mrequerimiento de Usuario">
                 <i class="material-icons blue-text">help</i>
             </a>
             <a href="#ticket" class="tooltipped right modal-trigger m-r-5" data-position="left" data-tooltip="Solicitar Ayuda">
@@ -25,7 +25,7 @@
                 <div class="card-content">
                     <div class="row">
                         <div class="col s12">
-                            <span class="blue-text p-l-10">Manual</span>
+                            <span class="blue-text p-l-10">mrequerimiento</span>
                             <a href="../c/main.php?m=menu" class="tooltipped right m-l-5" data-position="left" data-tooltip="Cerrar"><i class="material-icons blue-grey-text">cancel</i></a>
                             <a href="<?php if ($_SESSION["userAdmin"] == 4) { echo "javascript: void(0)"; } else { echo $link = $allow -> jCreate == 1 ? "../c/{$module}.php?m=create" : "javascript: void(0)"; } ?>" class="tooltipped right" data-position="left" data-tooltip="Nuevo Registro">
                                         <i class="material-icons <?php if ($_SESSION["userAdmin"] == 4) { echo "grey-text"; } else { echo $color = $allow -> jCreate == 1 ? "blue-text" : "grey-text"; } ?>">add_circle</i>
@@ -55,24 +55,24 @@
                                         <tbody>
                                             <?php while ($cp = $_cp -> fetch_object()) { ?>
                                             <tr>
-                                               <td><?php echo $cp -> manualName ?></td>
+                                               <td><?php echo $cp -> mrequerimientoName ?></td>
                                                
                                                <?php if ($_SESSION["userAdmin"] == 4) { ?>
                                                         <td class="center">
-                                                            <a target="_blank" href='../plugins/pdf/doc/manual.php?id=<?php echo $cp -> manualId; ?>' class='tooltipped' data-position='left' data-tooltip='Ver'><i class='material-icons blue-text'>search</i></a>
+                                                            <a target="_blank" href='../plugins/pdf/doc/mrequerimiento.php?id=<?php echo $cp -> mrequerimientoId; ?>' class='tooltipped' data-position='left' data-tooltip='Ver'><i class='material-icons blue-text'>search</i></a>
                                                         </td>
                                                         <?php } else { ?>
                                                         <td>
                                                             <a href="
                                                                 <?php
-                                                                $f = $cp -> manualId;
+                                                                $f = $cp -> mrequerimientoId;
                                                                 if ($_SESSION["userAdmin"] == 4) {
                                                                     $allow = 1;
 
-                                                                    echo $link = $allow == 1 ? "../c/{$module}.php?m=read&cid={ $cp -> manualId}" : "javascript: void(0)";
+                                                                    echo $link = $allow == 1 ? "../c/{$module}.php?m=read&cid={ $cp -> mrequerimientoId}" : "javascript: void(0)";
                                                                 }
                                                                 else {
-                                                                    echo $link = $allow -> jRead == 1 ? "../c/{$module}.php?m=read&cid={$cp -> manualId}" : "javascript: void(0)";
+                                                                    echo $link = $allow -> jRead == 1 ? "../c/{$module}.php?m=read&cid={$cp -> mrequerimientoId}" : "javascript: void(0)";
                                                                 }
                                                                 ?>" class="tooltipped" data-position="left" data-tooltip="Consultar"><i class="material-icons rotate-90 
                                                                 <?php
@@ -88,10 +88,10 @@
                                                                 <?php
                                                                 if ($_SESSION["userAdmin"] == 4) {
                                                                     $allow = 1;
-                                                                    echo $link = $allow == 1 ? "../c/{$module}.php?m=update2&cid={$cp -> manualId}" : "javascript: void(0)";
+                                                                    echo $link = $allow == 1 ? "../c/{$module}.php?m=update2&cid={$cp -> mrequerimientoId}" : "javascript: void(0)";
                                                                 }
                                                                 else {
-                                                                    echo $link = $allow -> jUpdate == 1 ? "../c/{$module}.php?m=update2&cid={$cp -> manualId}" : "javascript: void(0)";
+                                                                    echo $link = $allow -> jUpdate == 1 ? "../c/{$module}.php?m=update2&cid={$cp -> mrequerimientoId}" : "javascript: void(0)";
                                                                 }
                                                                 ?>" class="tooltipped m-l-10" data-position="left" data-tooltip="Modificar"><i class="material-icons 
                                                                 <?php
@@ -107,10 +107,10 @@
                                                                 <?php
                                                                 if ($_SESSION["userAdmin"] == 4) {
                                                                     $allow = 1;
-                                                                    echo $link = $allow == 1 ? "../c/{$module}.php?m=delete&cid={$cp -> manualId}" : "javascript: void(0)";
+                                                                    echo $link = $allow == 1 ? "../c/{$module}.php?m=delete&cid={$cp -> mrequerimientoId}" : "javascript: void(0)";
                                                                 }
                                                                 else {
-                                                                    echo $link = $allow -> jDelete == 1 ? "../c/{$module}.php?m=delete&cid={$cp -> manualId}" : "javascript: void(0)";
+                                                                    echo $link = $allow -> jDelete == 1 ? "../c/{$module}.php?m=delete&cid={$cp -> mrequerimientoId}" : "javascript: void(0)";
                                                                 }
                                                                 ?>" class="tooltipped m-l-10" data-position="top" data-tooltip="Eliminar"><i class="material-icons 
                                                                 <?php

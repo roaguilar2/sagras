@@ -5,9 +5,9 @@
     <div class="row">
         <div class="col s12 m-b-5">
             <a href="../c/main.php?m=menu" class="breadcrumb hide-on-small-only">Men&uacute; Principal</a>
-            <a href="#!" class="breadcrumb hide-on-med-and-down">Dmanual</a>
+            <a href="#!" class="breadcrumb hide-on-med-and-down">Dmrequerimiento</a>
             <a href="#!" class="breadcrumb ">Eliminar</a>
-            <a href="#help" class="tooltipped right modal-trigger m-r-5" data-position="left" data-tooltip="Manual de Usuario">
+            <a href="#help" class="tooltipped right modal-trigger m-r-5" data-position="left" data-tooltip="mrequerimiento de Usuario">
                 <i class="material-icons blue-text">help</i>
             </a>
             <a href="#ticket" class="tooltipped right modal-trigger m-r-5" data-position="left" data-tooltip="Solicitar Ayuda">
@@ -38,11 +38,11 @@
                         <div class="row">
                             <div class="col s12">
                                 <div class="m-t-20 m-b-20 m-l-20 m-r-20">
-                                    <form id="form_validation" action="../c/manual.php?m=deleteDb&cid=<?php echo $_GET["cid"]; ?>" method="post">
+                                    <form id="form_validation" action="../c/mrequerimiento.php?m=deleteDb&cid=<?php echo $_GET["cid"]; ?>" method="post">
                                         <div class="row">
                                             <div class="col s12 m6 l4">
                                                 <div class="input-field">
-                                                    <input value="<?php echo $client -> manualName; ?>"type="text" disabled="">
+                                                    <input value="<?php echo $client -> mrequerimientoName; ?>"type="text" disabled="">
                                                     <label for="categoriasName">Datos</label>
                                                 </div>
                                             </div>
@@ -85,7 +85,7 @@
 
 <div id="help" class="modal">
 <div class="modal-content">
-    <p class="">Manual de Usuario</p>
+    <p class="">mrequerimiento de Usuario</p>
     <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo

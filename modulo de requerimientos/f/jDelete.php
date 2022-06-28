@@ -11,12 +11,12 @@ $c = $_GET["cid"];
 
 $_client = mysqli_query(
     $master,
-    "SELECT * FROM manual
-    WHERE manualId = '" . $c . "'
+    "SELECT * FROM mrequerimiento
+    WHERE mrequerimientoId = '" . $c . "'
 ");
 
 $client = $_client -> fetch_object();
 
 // view
 
-require_once '../v/manual/jDelete.php';
+require_once '../v/mrequerimiento/jDelete.php';

@@ -7,7 +7,7 @@
                     <a href="../c/main.php?m=menu" class="breadcrumb hide-on-small-only">Men&uacute; Principal</a>
                     <a href="#!" class="breadcrumb hide-on-med-and-down">Preguntas</a>
                     <a href="#!" class="breadcrumb ">A&ntilde;adir</a>
-                    <a href="#help" class="tooltipped right modal-trigger m-r-5" data-position="left" data-tooltip="Manual de Usuario">
+                    <a href="#help" class="tooltipped right modal-trigger m-r-5" data-position="left" data-tooltip="mrequerimiento de Usuario">
                         <i class="material-icons blue-text">help</i>
                     </a>
                     <a href="#ticket" class="tooltipped right modal-trigger m-r-5" data-position="left" data-tooltip="Solicitar Ayuda">
@@ -39,8 +39,8 @@
                                                         
                                                         <div class="col s12 m5 l4 ">
                                                             <div class="input-field">
-                                                                <input id="clientName" name="clientName" placeholder="" type="text" class="validate" value="Manual de Empresa familiar" readonly>
-                                                                <label for="clientName">Nombre del Manual</label>
+                                                                <input id="clientName" name="clientName" placeholder="" type="text" class="validate" value="mrequerimiento de Empresa familiar" readonly>
+                                                                <label for="clientName">Nombre del mrequerimiento</label>
                                                                 <span class="helper-text" data-error="El campo es requerido" data-success=""></span>
                                                             </div>
                                                         </div>
@@ -478,7 +478,7 @@
 
     <div id="help" class="modal">
         <div class="modal-content">
-            <p class="">Manual de Usuario</p>
+            <p class="">mrequerimiento de Usuario</p>
             <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo

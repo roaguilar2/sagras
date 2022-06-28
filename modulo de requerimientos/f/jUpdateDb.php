@@ -1,7 +1,7 @@
 <?php
 
 // module
-$module = 'manual';
+$module = 'mrequerimiento';
 
 /*
  * Incluye y evalúa el archivo especificado.
@@ -9,24 +9,24 @@ $module = 'manual';
 include '../connection.php';
 
 // var
-$manualName = filter_var($_POST['d'], FILTER_SANITIZE_STRING);
-$manualtext = filter_var($_POST['manualText'], FILTER_SANITIZE_STRING);
-$manualtext2 = filter_var($_POST['manualText2'], FILTER_SANITIZE_STRING);
+$mrequerimientoName = filter_var($_POST['d'], FILTER_SANITIZE_STRING);
+$mrequerimientotext = filter_var($_POST['mrequerimientoText'], FILTER_SANITIZE_STRING);
+$mrequerimientotext2 = filter_var($_POST['mrequerimientoText2'], FILTER_SANITIZE_STRING);
 // update
 
 $update = $master -> prepare ("
-    UPDATE manual
+    UPDATE mrequerimiento
     SET
-    manualName = ?,
-    manualtext = ?,
-    manualtext2 = ?
+    mrequerimientoName = ?,
+    mrequerimientotext = ?,
+    mrequerimientotext2 = ?
     WHERE
-    manualId = ?
+    mrequerimientoId = ?
 ");	
 
 $update -> bind_param (
     "sssi",
-    $manualName, $manualtext, $manualtext2, $_GET["cid"]
+    $mrequerimientoName, $mrequerimientotext, $mrequerimientotext2, $_GET["cid"]
 );
 
 $update -> execute();
@@ -51,7 +51,7 @@ $id = $_GET["cid"];
 
             if (1 == 1) {
 
-                $ruta2 = '../manual/' . $id . '/';
+                $ruta2 = '../mrequerimiento/' . $id . '/';
                 $archivo2 = $ruta2 . $_FILES["archivo2"]["name"];
                 if (!file_exists($ruta2)) {
                     mkdir($ruta2);
@@ -74,7 +74,7 @@ $id = $_GET["cid"];
             $filename2 = $_FILES["archivo2"]["name"][$key]; //Obtenemos el nombre original del archivo
             $source2 = $_FILES["archivo2"]["tmp_name"][$key]; //Obtenemos un nombre temporal del archivo
 
-            $directorio2 = '../manual/' . $id . '/'; //Declaramos un  variable con la ruta donde guardaremos los archivos
+            $directorio2 = '../mrequerimiento/' . $id . '/'; //Declaramos un  variable con la ruta donde guardaremos los archivos
             //Validamos si la ruta de destino existe, en caso de no existir la creamos
             if (!file_exists($directorio2)) {
                 mkdir($directorio2, 0777) or die("No se puede crear el directorio de extracci&oacute;n");
