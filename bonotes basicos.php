@@ -1,3 +1,5 @@
+esto es un cambio hecho por ronald
+
 Estos son los botones suados en todas las pantallas del sistema y como usarlos
 <!-- boton leyenda -->
 <a href="#help22" class="tooltipped right modal-trigger " data-position="left" data-tooltip="leyenda">
