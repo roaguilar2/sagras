@@ -8,7 +8,7 @@ Estos son los botones suados en todas las pantallas del sistema y como usarlos
 <!-- fin boton leyenda -->
 
 <!-- botones para funcion para tomar captura este es el boton -->    
-<a class="right  tooltipped" id="a-make" href="#" data-position="left" data-tooltip="Capturar Pantalla"><i class="material-icons">photo_camera</i></a>
+<a class="right  tooltipped" id="a-make" href="#" data-position="left" data-tooltip="Capturar Pantalla"><i class="material-icons blue-text">photo_camera</i></a>
 <a class="right  tooltipped" id="a-download" href="#" style="display:none;" data-position="left" data-tooltip="Descargar Im&aacute;gen"><i class="material-icons green-text">file_download</i></a>
 <a class="right " id="a-return" href="#" style="display:none;"><span class="m-r-10">Cerrar Im&aacute;gen</span></a>
 <!-- botones para funcion para tomar captura -->
