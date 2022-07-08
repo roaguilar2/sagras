@@ -68,7 +68,7 @@
                                                                 
                                                                 
                                                                 <!-- tabla q contiene las actividades -->
-                                                                    <table class="m-t-5" style="width:100%;">
+                                                                <table class="m-t-5" style="width:100%;">
                                                                         <tbody>
                                                                             <tr>
                                                                                 <td class="blue-grey lighten-2 white-text" style="width:85%;">
@@ -102,8 +102,10 @@
                                                                                 </td>
                                                                                 
                                                                                 <td class="center blue-grey lighten-3" style="width:3%;">
-                                                                                    
-                                                                                <!-- botones  -->
+                                                                                
+                                                                        </tbody>
+                                                                    </table>
+<!-- final tabla que contiene actividades-->
                                                                                     
                                                                                     
                                                                                 <?php
