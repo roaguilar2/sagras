@@ -16,3 +16,4 @@ show.addEventListener('click', () => dialog.showModal())
 cancel.addEventListener('click',() => dialog.close()) </script>
 <!-- fin de modal js -->
 
+<!-- alberto -->
