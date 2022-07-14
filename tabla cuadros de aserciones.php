@@ -1,14 +1,15 @@
-<!-- tabla q contiene las actividades en un desplegable  -->
 
+<!-- tabla q contiene las actividades en un desplegable  -->
+<?php if ($etapaId == 3) { ?>
 <div class="col s12 m12 l12 ">
                                             <ul class="collapsible">
                                                 <li>
-                                                    <div class="collapsible-header grey lighten-4"><i class="material-icons blue-text">list</i>Descripci&oacute;n</div>
+                                                    <div class="collapsible-header grey lighten-4"><i class="material-icons red-text">assignment_late</i>Ascerciones</div>
                                                     <div class="collapsible-body">
                                                         <div class="row">
 
 
-                                                            <table class="" style="width:100%;">
+                                                            <table class="">
                                                                 <tbody>
 <tr>
 
@@ -47,8 +48,7 @@
                                                                                     PD
                                                                                          </a></div>
 </td>
-<td class="center grey lighten-4" style="width:3%;">
-</td>
+
 </tr>
                                                                     
 
@@ -59,13 +59,13 @@
 
                                                                                 
                                                                             
-                                                                            <td class="  grey lighten-4" style="width:3%;background-color:white">
+                                                                            <td class="  grey lighten-4" style="background-color:white">
 
                                                                                 <a class=" tooltipped" data-tooltip="Asercion  1 C">
 
 
                                                                                     <label>
-                                                                                        <input value="<?php echo $mmodelo->aId; ?>" type="hidden" name="preguntasC1[]" />
+                                                                                        <input value="<?php echo $mmodelo->aId; ?>" type="hidden" name="a1" />
                                                                                         <input class="filled-in "   value="1" type="checkbox" name="pc[<?php echo $mmodelo->aId; ?>]" />
                                                                                         <span class="blue-grey-text text-darken-2"> </span>
                                                                                     </label>
@@ -78,11 +78,11 @@
 
                                                         </div>
                                                         </td>
-                                                        <td class="center  grey lighten-4" style="width:3%; background-color:#cfd8dc">
+                                                        <td class=" grey lighten-4" style=" background-color:#cfd8dc">
                                                             <div>
                                                                 <a class=" tooltipped" data-tooltip="Asercion 2 A">
                                                                     <label>
-                                                                        <input value="<?php echo $mmodelo->aId; ?>" type="hidden" name="preguntasC2[]" />
+                                                                        <input value="<?php echo $mmodelo->aId; ?>" type="hidden" name="a2" />
                                                                         <input class="filled-in "  type="checkbox" value="1"  name="pca[<?php echo $mmodelo->aId; ?>]" />
                                                                         <span class="blue-grey-text text-darken-2"></span>
                                                                     </label>
@@ -94,11 +94,11 @@
                                                             </div>
                                                         </td>
                                     
-                                                        <td class="center grey lighten-4" style="width:3%;background-color:#cfd8dc">
+                                                        <td class="grey lighten-4" style="background-color:#cfd8dc">
                                                             <div>
                                                                 <a class=" tooltipped" data-tooltip="Asercion 3 E/O">
                                                                     <label>
-                                                                        <input value="<?php echo $mmodelo->aId; ?>" type="hidden" name="preguntasC3[]" />
+                                                                        <input value="<?php echo $mmodelo->aId; ?>" type="hidden" name="a3" />
                                                                         <input class="filled-in "  type="checkbox" name="pcb[<?php echo $mmodelo->aId; ?>]" />
                                                                         <span class="blue-grey-text text-darken-2"></span>
                                                                     </label>
@@ -107,12 +107,12 @@
                                                             </div>
                                                         </td>
 
-                                                        <td class="center  grey lighten-4" style="width:3%;background-color:#cfd8dc">
+                                                        <td class="grey lighten-4" style="background-color:#cfd8dc">
                                                             <div>
                                                                 <a class=" tooltipped" data-tooltip="Asercion 4 CO">
 
                                                                     <label>
-                                                                        <input value="<?php echo $mmodelo->aId; ?>" type="hidden" name="preguntasC4[]" />
+                                                                        <input value="<?php echo $mmodelo->aId; ?>" type="hidden" name="a4" />
                                                                         <input class="filled-in "  type="checkbox" name="pcc[<?php echo $mmodelo->aId; ?>]" />
                                                                         <span class="blue-grey-text text-darken-2"></span>
                                                                     </label>
@@ -123,11 +123,11 @@
                                                             </div>
                                                         </td>
 
-                                                        <td class="center  grey lighten-4" style="width:3%;background-color:white">
+                                                        <td class="grey lighten-4" style="background-color:white">
                                                             <div>
                                                                 <a class=" tooltipped" data-tooltip="Asercion 5 RO">
                                                                     <label>
-                                                                        <input value="<?php echo $mmodelo->aId; ?>" type="hidden" name="preguntasC5[]" />
+                                                                        <input value="<?php echo $mmodelo->aId; ?>" type="hidden" name="a5" />
                                                                         <input class="filled-in "  type="checkbox" name="pcd[<?php echo $mmodelo->aId; ?>]" />
                                                                         <span class="blue-grey-text text-darken-2"> </span>
                                                                     </label>
@@ -138,11 +138,11 @@
                                                     </div>
                                                     </td>
 
-                                                    <td class="center  grey lighten-4" style="width:3%; background-color:#cfd8dc">
+                                                    <td class="grey lighten-4" style="background-color:#cfd8dc">
                                                         <div>
                                                             <a class=" tooltipped" data-tooltip="Asercion 6 VA">
                                                                 <label>
-                                                                    <input value="<?php echo $mmodelo->aId; ?>" type="hidden" name="preguntasC6[]" />
+                                                                    <input value="<?php echo $mmodelo->aId; ?>" type="hidden" name="a6" />
                                                                     <input class="filled-in "  type="checkbox" name="pce[<?php echo $mmodelo->aId; ?>]" />
                                                                     <span class="blue-grey-text text-darken-2"></span>
                                                                 </label>
@@ -152,12 +152,12 @@
                                         </div>
                                         </td>
 
-                                        <td class="center  grey lighten-4" style="width:3%;background-color:#cfd8dc">
+                                        <td class="grey lighten-4" style="background-color:#cfd8dc">
                                             <div>
 
-                                                <a class=" tooltipped" data-tooltip="Asercion 7 PD">
+                                                <a class=" tooltipped " data-tooltip="Asercion 7 PD">
                                                     <label>
-                                                        <input value="<?php echo $mmodelo->aId; ?>" type="hidden" name="preguntasC7[]" />
+                                                        <input value="<?php echo $mmodelo->aId; ?>" type="hidden" name="a7" />
                                                         <input class="filled-in "  type="checkbox" name="pcf[<?php echo $mmodelo->aId; ?>]" />
                                                         <span class="blue-grey-text text-darken-2"></span>
                                                     </label>
@@ -165,24 +165,7 @@
 
                                             </div>
                                         </td>
-
-
-
-                                        <td class="center blue-grey lighten-3" style="width:3%;">
-                                            <a class=" tooltipped" href="../c/project.php?m=revision2&p=p&c=<?php echo $c;?>&amId=<?php echo $amId;?>&serviceId=<?php echo $serviceId;?>&md=<?php echo $md;?>&rubroId=<?php echo $rubroId;?>&frecuencia=<?php echo $frecuencia;?>" data-tooltip="Asignar tarea por Frecuencia">
-                                                <i class="material-icons blue-grey-text">edit</i>
-
-                                            </a>
-                                        </td>
-                                        <td class="center blue-grey lighten-3" style="width:3%;">
-                                            <a class=" tooltipped" href="../c/project.php?m=revision2&p=p&c=<?php echo $c;?>&amId=<?php echo $amId;?>&serviceId=<?php echo $serviceId;?>&md=<?php echo $md;?>&rubroId=<?php echo $rubroId;?>&frecuencia=<?php echo $frecuencia;?>" data-tooltip="Asignar tarea por Frecuencia">
-                                                <i class="material-icons blue-grey-text">edit</i>
-
-                                            </a>
-                                        </td>
-
-                                    <?php } ?>
-
+                                        
                                     </tbody>
                                     </table>
 
@@ -192,4 +175,7 @@
                                 </li>
                                 </ul>
                             </div>
-                            <!-- final tabla que contiene actividades-->
+                            <?php } ?>
+                            <!-- final tabla que contiene actividades--> 
+
+
