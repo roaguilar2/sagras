@@ -10,6 +10,9 @@ $module = 'project';
 $action = 'add';
 
 // variables obtenidas por metodo POST
+$materialidadId = $_GET['materialidadId'];
+$c = $_GET['projectId'];
+$amId = $GET['amId'];
 $tramo = $_POST['tramo'];
 $tramoEnviado = $_POST['tramoEnviado'];
 
@@ -18,17 +21,21 @@ $tramoEnviado = $_POST['tramoEnviado'];
 
 // verify
 
-    $insert = $connection -> prepare ("
-        INSERT INTO materialidad
-        (tramo, tramoEnviado)
-        VALUES
-        (?,?)
-    ");
+    $update = $connection -> prepare ("
+    UPDATE materialidad
+    SET
+    tramo = ?
+    tramoEnviado = ?
+    WHERE
+    materialidadId = ? AND projectId = ? AND amId = ?
+");	
 
-    $insert -> bind_param (
-        "ii",
-        $tramo, $tramoEnviado 
-    );
+$update -> bind_param (
+    "iiiii",
+    $tramo, $tramoEnviado, $materialidadId, $c, $amId
+);
+
+$update -> execute();
 
 
     $insert -> execute();
