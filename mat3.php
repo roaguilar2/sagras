@@ -15,20 +15,21 @@ $importanciaRS = $_POST['importanciaRS'];
 
 // verify
 
-    $insert = $connection -> prepare ("
-        INSERT INTO materialidad
-        (importanciaRS)
-        VALUES
-        (?)
-    ");
+$update = $connection -> prepare ("
+UPDATE materialidad
+SET
+tramo = ?
+tramoEnviado = ?
+WHERE
+materialidadId = ? AND projectId = ? AND amId = ?
+");	
 
-    $insert -> bind_param (
-        "i",
-        $importanciaRS
-    );
+$update -> bind_param (
+"iiiii",
+$tramo, $tramoEnviado, $materialidadId, $c, $amId
+);
 
-
-    $insert -> execute();
+$update -> execute();
     
   
     
