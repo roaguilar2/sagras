@@ -10,6 +10,9 @@ $module = 'project';
 $action = 'add';
 
 // variables obtenidas por metodo POST
+$materialidadId = $_GET['materialidadId'];
+$c = $_GET['projectId'];
+$amId = $GET['amId'];
 $importanciaRS = $_POST['importanciaRS'];
 
 
@@ -18,14 +21,13 @@ $importanciaRS = $_POST['importanciaRS'];
 $update = $connection -> prepare ("
 UPDATE materialidad
 SET
-tramo = ?
-tramoEnviado = ?
+importanciaRS = ?
 WHERE
 materialidadId = ? AND projectId = ? AND amId = ?
 ");	
 
 $update -> bind_param (
-"iiiii",
+"iiii",
 $tramo, $tramoEnviado, $materialidadId, $c, $amId
 );
 
