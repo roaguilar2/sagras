@@ -10,30 +10,27 @@ $module = 'project';
 $action = 'add';
 
 // variables obtenidas por metodo POST
-$tramo = $_POST['tramo'];
-$tramoEnviado = $_POST['tramoEnviado'];
-
-
+$importanciaRS = $_POST['importanciaRS'];
 
 
 // verify
 
     $insert = $connection -> prepare ("
         INSERT INTO materialidad
-        (tramo, tramoEnviado)
+        (importanciaRS)
         VALUES
-        (?,?)
+        (?)
     ");
 
     $insert -> bind_param (
-        "ii",
-        $tramo, $tramoEnviado 
+        "i",
+        $importanciaRS
     );
 
 
     $insert -> execute();
     
-    $id = $master -> insert_id;
+  
     
     // trace
 

@@ -10,30 +10,26 @@ $module = 'project';
 $action = 'add';
 
 // variables obtenidas por metodo POST
-$nivelMRI2 = $_POST['nivelMRI2'];
-
-
-
+$beneficioI = $_POST['beneficioI'];
 
 // verify
 
     $insert = $connection -> prepare ("
         INSERT INTO materialidad
-        (nivelMRI2)
+        (beneficioI)
         VALUES
         (?)
     ");
 
     $insert -> bind_param (
         "i",
-        $nivelMRI2
+        $beneficioI
     );
 
 
     $insert -> execute();
     
-   
-    
+        
     // trace
 
     $trace = $master -> prepare ("

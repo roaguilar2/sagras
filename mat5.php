@@ -10,22 +10,23 @@ $module = 'project';
 $action = 'add';
 
 // variables obtenidas por metodo POST
-$recorte = $_POST['recorte'];
-$recorteEnviado = $_POST['recorteEnviado'];
+$importanciRSA = $_POST['importanciRSA'];
+
+
 
 
 // verify
 
     $insert = $connection -> prepare ("
         INSERT INTO materialidad
-        (recorte, recorteEnviado)
+        (importanciRSA)
         VALUES
-        (?,?)
+        (?)
     ");
 
     $insert -> bind_param (
-        "ii",
-        $recorte, $recorteEnviado
+        "i",
+        $importanciRSA 
     );
 
 

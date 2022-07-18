@@ -10,26 +10,31 @@ $module = 'project';
 $action = 'add';
 
 // variables obtenidas por metodo POST
-$beneficioI = $_POST['beneficioI'];
+$tramo = $_POST['tramo'];
+$tramoEnviado = $_POST['tramoEnviado'];
+
+
+
 
 // verify
 
     $insert = $connection -> prepare ("
         INSERT INTO materialidad
-        (beneficioI)
+        (tramo, tramoEnviado)
         VALUES
-        (?)
+        (?,?)
     ");
 
     $insert -> bind_param (
-        "i",
-        $beneficioI
+        "ii",
+        $tramo, $tramoEnviado 
     );
 
 
     $insert -> execute();
     
-        
+    $id = $master -> insert_id;
+    
     // trace
 
     $trace = $master -> prepare ("
