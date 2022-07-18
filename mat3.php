@@ -28,7 +28,7 @@ materialidadId = ? AND projectId = ? AND amId = ?
 
 $update -> bind_param (
 "iiii",
-$tramo, $tramoEnviado, $materialidadId, $c, $amId
+$importanciaRS, $materialidadId, $c, $amId
 );
 
 $update -> execute();
