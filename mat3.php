@@ -9,10 +9,11 @@ include '../connection2.php';
 $module = 'project';
 $action = 'add';
 
-// variables obtenidas por metodo POST
+
 $materialidadId = $_GET['materialidadId'];
 $c = $_GET['projectId'];
 $amId = $GET['amId'];
+// variables obtenidas por metodo POST
 $importanciaRS = $_POST['importanciaRS'];
 
 

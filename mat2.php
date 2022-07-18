@@ -9,10 +9,11 @@ include '../connection2.php';
 $module = 'project';
 $action = 'add';
 
-// variables obtenidas por metodo POST
+// variables obtenidas por metodo GET
 $materialidadId = $_GET['materialidadId'];
 $c = $_GET['projectId'];
 $amId = $GET['amId'];
+// variables obtenidas por metodo POST
 $tramo = $_POST['tramo'];
 $tramoEnviado = $_POST['tramoEnviado'];
 
@@ -24,7 +25,7 @@ $tramoEnviado = $_POST['tramoEnviado'];
     $update = $connection -> prepare ("
     UPDATE materialidad
     SET
-    tramo = ?
+    tramo = ?,
     tramoEnviado = ?
     WHERE
     materialidadId = ? AND projectId = ? AND amId = ?

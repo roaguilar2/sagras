@@ -9,6 +9,11 @@ include '../connection2.php';
 $module = 'project';
 $action = 'add';
 
+// variables obtenidas por metodo GET
+$materialidadId = $_GET['materialidadId'];
+$c = $_GET['projectId'];
+$amId = $GET['amId'];
+
 // variables obtenidas por metodo POST
 $nivelMRI2 = $_POST['nivelMRI2'];
 
@@ -17,20 +22,20 @@ $nivelMRI2 = $_POST['nivelMRI2'];
 
 // verify
 
-    $insert = $connection -> prepare ("
-        INSERT INTO materialidad
-        (nivelMRI2)
-        VALUES
-        (?)
-    ");
+$update = $connection -> prepare ("
+UPDATE materialidad
+SET
+nivelMRI2 = ?
+WHERE
+materialidadId = ? AND projectId = ? AND amId = ?
+");	
 
-    $insert -> bind_param (
-        "i",
-        $nivelMRI2
-    );
+$update -> bind_param (
+"iiii",
+$nivelMRI2, $materialidadId, $c, $amId
+);
 
-
-    $insert -> execute();
+$update -> execute();
     
    
     
