@@ -37,12 +37,7 @@ $update -> bind_param (
 );
 
 $update -> execute();
-
-
-    $insert -> execute();
-    
-    $id = $master -> insert_id;
-    
+       
     // trace
 
     $trace = $master -> prepare ("
